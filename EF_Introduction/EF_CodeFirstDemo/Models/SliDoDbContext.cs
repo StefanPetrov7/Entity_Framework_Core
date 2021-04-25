@@ -9,7 +9,7 @@ namespace EF_CodeFirstDemo.Models
         { }
 
         /* In case we want to add options from outside.
-         * We add empty ctor and want with the option injected.
+         * We add empty ctor and second one with the option injected.
          * We can use it for changing the connection address.
          * */
 
