@@ -17,6 +17,8 @@ namespace SoftUni
     {
         public static void Main(string[] args)
         {
+            // Using SoftUni DB. 
+            
             var db = new SoftUniContext();
             string result = RemoveTown(db);
             Console.WriteLine(result);
