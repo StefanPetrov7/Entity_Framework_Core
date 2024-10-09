@@ -44,7 +44,7 @@
                         WriterName = x.Writer.Name
                     }).OrderByDescending(x => x.Name).ThenBy(x => x.WriterName).ToList(),
                 })
-                .AsEnumerable()
+                .AsEnumerable()  // This is called because of the calculated property X.Price, EF core requirment. 
                 .OrderByDescending(x => x.AlbumPrice)
                 .ToList();
 
